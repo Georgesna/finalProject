@@ -1,0 +1,193 @@
+* {
+    box-sizing : border-box;
+}
+
+body {
+    width: 95%;
+    margin: auto;
+    background-color: rgb(77, 73, 73);
+    background-image: url(../images/background.png);
+    color: rgb(0, 0, 0);
+}
+header a {
+    text-decoration: none;
+}
+header a img {
+    margin: 20px;
+    margin-top: 60px;
+}
+header h1 {
+    margin-top:-100px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat Subrayada', sans-serif; */
+}
+
+.Subrayada {
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.admin-interface {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.admin-interface a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+.admin-interface a:hover {
+    font-weight: bold;
+}
+
+.user-interface {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.user-interface a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+.user-interface a:hover {
+    font-weight: bold;
+}
+
+footer>div {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+footer>div div {
+    margin: 30px;
+}
+#Map {
+    width: 100%;
+}
+.link-list {
+    text-align: center;
+    padding-left: 0;
+    position: relative;
+
+    /* presentation */
+    list-style-type: none;
+}
+.link-list li {
+    display: inline-block;
+}
+#realiseAvec  {
+    text-align: center;
+    margin-left: 1100px;
+}
+.carteTitre {
+    margin-top: 100px;
+    text-align: center;
+}
+#photoCarte {
+    text-align: center;
+}
+#menu {
+    margin-top: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+#menu div {
+    border: 2px dashed orange;
+    padding: 20px;
+}
+#menu div p {
+    border-top: 1px dashed orange;
+    padding-top: 15px;
+  
+}
+#flexChoix {
+    display: flex;
+    justify-content: center;
+}
+.choix {
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+    margin-top: 80px;
+}
+.choix h2 {
+    padding-bottom: 15px;
+
+}
+.red {
+    border: 2px dashed rgb(138, 3, 3);
+}
+.red h2 {
+border-bottom: 1px dashed rgb(138, 3, 3);
+
+}
+.green {
+    border: 2px dashed rgb(14, 97, 7);
+}
+.green h2 {
+border-bottom: 1px dashed rgb(14, 97, 7);
+}
+form {
+    width: 25%;
+    margin: auto;
+    text-align: end;
+}
+.formulaire {
+    margin-top: 40px;
+}
+#merci {
+    text-align: center;
+}
+#macommande a img {
+    display: block;
+    margin: 20px;
+}
+#macommande img {
+width: 150px;
+height: 100px;
+}
+#macommande div {
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+}
+#macommande h4 {
+    display: inline;
+}
+.menusimple div {
+    display: flex;
+}
+.menusimple a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+#formuleSelect div {
+    margin: 10px;
+    display: block;
+}
+#formuleSelect a {
+    text-decoration: none;
+    color: white;
+}
+#ingredientView {
+    display: flex;
+
+}
+
+
+
+
+
+
+

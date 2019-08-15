@@ -1,0 +1,31 @@
+<h1>Interface Formule</h1>
+<div class="formulaire">
+    <form action="<?= $requestUrl?>/register" method="post">
+        <fieldset>
+            <legend>Modifier une formule</legend>
+            <div>
+                <label for="name">nom de la formule à modifié</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="type">type</label>
+                <select id="type">
+                    <option value="BASE">BASE</option>
+                    <option value="PROTEINE">PROTEINE</option>
+                    <option value="SUPPLEMENT">SUPPLEMENT</option>
+                </select>
+            </div>
+            <div>
+                <label for="prix">prix</label>
+                <input type="text" name="prix" id="prix">
+            </div>
+            <div>
+                <label for="name">nom de l'image</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <button>Valider</button>
+            </div>
+        </fieldset>
+    </form>
+</div>

@@ -1,0 +1,126 @@
+<div id="ingredientView">
+<h1>Interface Ingredient</h1>
+<div class="flex">
+<h2>Base</h2>
+<ul>
+    <li>Riz</li>
+    <li>Quinoa</tr>
+    <li>Pâtes</tr>
+</ul>
+</div>
+<div class="flex">
+<h2>Ingrédients</h2>
+<ul>
+    <li>Boeuf</li>
+    <li>Poulet</li>
+    <li>Crevettes</li>
+    <li>Tofu</li>
+    <li>ciboulette</li>
+    <li>menthe</li>
+    <li>coriandre</li>
+    <li>basilic</li>
+    <li>citron vert</li>
+    <li>cacahuètes</li>
+    <li>oignons</li>
+    <li>soja</li>
+</ul>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="formulaire">
+    <form action="<?= $requestUrl?>/ingredient" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Ajouter un ingrédient</legend>
+            <div>
+                <label for="name">name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="type">type</label>
+                <select id="type" name="type">
+                    <option value="BASE">BASE</option>
+                    <option value="PROTEINE">PROTEINE</option>
+                    <option value="SUPPLEMENT">SUPPLEMENT</option>
+                </select>
+            </div>
+            <div>
+                <label for="prix">prix</label>
+                <input type="text" name="prix" id="prix">
+            </div>
+            <div>
+                <input type="file" name="picture" id="picture" />
+            </div>
+            <div>
+                <button>Valider</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+
+<div id="ingredientView">
+<h1>Interface Dessert/Boissons</h1>
+
+<div class="flex">
+<h2>Dessert</h2>
+<ul>
+    <li>perles de chia</li>
+    <li>mousse choco</li>
+    <li>mousse kalamansi</li>
+    <li>sorbet mangue</li>
+    <li>sorbet coco</li>
+    <li>sorbet citron</li>
+    <li>sorbet litchi</li>
+</ul>
+</div>
+<div class="flex">
+<h2>Boissons</h2>
+<ul>
+    <li>evian</li>
+    <li>badoit</li>
+    <li>coca cola</li>
+    <li>thé vert grenade</li>
+    <li>Tsingtao</li>
+    <li>Singha</li>
+    <li>Chang</li>
+</ul>
+</div>
+</div>
+
+
+
+<div class="formulaire">
+    <form action="<?= $requestUrl?>/dessert" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Ajouter un dessert / boisson</legend>
+            <div>
+                <label for="name">name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="type">type</label>
+                <select id="type" name="type">
+                    <option value="boisson">boisson</option>
+                    <option value="dessert">dessert</option>
+                </select>
+            </div>
+            <div>
+                <label for="prix">prix</label>
+                <input type="text" name="prix" id="prix">
+            </div>
+            <div>
+                <input type="file" name="picture" id="picture" />
+            </div>
+            <div>
+                <button>Valider</button>
+            </div>
+        </fieldset>
+    </form>
+</div>

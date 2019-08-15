@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nahal Restaurant</title>
+    <link rel="stylesheet" href="<?= $wwwUrl ?>/css/normalize-3.0.3.min.css">
+    <link rel="stylesheet" href="<?= $wwwUrl ?>/css/font-awesome-4.3.0.min.css">
+
+    <!-- Feuilles de styles de l'application -->
+    <link rel="stylesheet" href="<?= $wwwUrl ?>/css/style.css">
+    <link rel="stylesheet" href="<?= $wwwUrl ?>/css/index.css">
+    <link rel="stylesheet" href="<?= $wwwUrl ?>/css/commandestyle.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Subrayada&display=swap" rel="stylesheet"> 
+
+    <!-- Librairie jQuery -->
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+    <!-- JavaScript de l'application -->
+    <script src="<?= $wwwUrl ?>/js/utilities.js"></script>
+</head>
+<body>
+
+<!-- En-tête commune -->
+<header>
+    <div>
+        <a href="<?= $requestUrl ?>">
+            <img src="<?= $wwwUrl ?>/images/logo-white.png" alt="Nahal Restaurant">
+        
+        <h1 class="Subrayada">Nahal Restaurant</h1>
+        </a>
+    </div>
+    <!-- Interface utilisateur -->
+    <?php if (isset($_SESSION['user']) && $_SESSION['user']['Role'] === 'admin') : ?>
+        <nav class="admin-interface">
+            <a href="<?= $requestUrl ?>/addformule">Ajouter une formule</a>
+            <a href="<?= $requestUrl ?>/ingredient">Ajouter des ingrédients</a>
+            <a href="<?= $requestUrl ?>/suivreCommande">Suivre les commandes</a>
+            <?php if (!isset($_SESSION['user'])) : ?>
+                <a href="<?= $requestUrl ?>/utilisateur">S'identifier</a>
+            <?php else : ?>
+                <a id="deconnexion" href="<?= $requestUrl ?>/logout">Déconnexion (<?= $_SESSION['user']['FirstName'] ?>)</a>
+            <?php endif ?>
+        </nav> 
+    <?php else : ?>
+        <nav class="user-interface">
+            <a href="<?= $requestUrl ?>/menu">Menu</a>
+            <a href="<?= $requestUrl ?>/formuleselect">Ma Commande</a>
+            <a href="#">Mon panier</a> 
+            <?php if (!isset($_SESSION['user'])) : ?>
+                <a href="<?= $requestUrl ?>/utilisateur">S'identifier</a>
+            <?php else : ?>
+                <a id="deconnexion" href="<?= $requestUrl ?>/logout">Déconnexion (<?= $_SESSION['user']['FirstName'] ?>)</a>
+            <?php endif ?>
+    <?php endif ?>
+</nav>
+</header>
+
+
+
+
+<main>
+    <!-- Affichage du template lié à la vue -->
+    <?php include $this->viewData['template'] ?>
+</main>
+
+<!-- Pied de page commun -->
+<footer>
+    <div>
+    <div>
+    <p class="Subrayada">Nous trouver</p>
+    <p>1 Avenue du Colonel Henri Rol-Tanguy<br>75014 Paris, France</p>
+    </div>
+    <div>
+    <p class="Subrayada">Téléphone : </p>
+    <p>+33 1 43 22 47 63</p>
+    </div>
+    </div>
+    <div>
+        <p>Ouvert de 11h00 à 14h30&nbsp;</p>
+        <p>et de 19h00 à 22h00</p>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118792.37395954349!2d2.1939554046359087!3d48.8588699455303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671b6c1d0b675%3A0xc8d7f073e62eb4b3!2sCatacombs+of+Paris!5e0!3m2!1sen!2slb!4v1565786693943!5m2!1sen!2slb" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></iframe>
+
+
+
+
+
+
+
+    <ul class="link-list">
+        <li><img src="<?= $wwwUrl ?>/images/payment/visa.png" alt="Visa"></li>
+        <li><img src="<?= $wwwUrl ?>/images/payment/mastercard.png" alt="MasterCard"></li>
+        <li><img src="<?= $wwwUrl ?>/images/payment/paypal.png" alt="PayPal"></li>
+    </ul>
+    <p  style="text-align: center;">Copyright © 2019 Nahal Restaurant. All Rights Reserved.</p>
+</footer>
+
+<!-- Code principal JavaScript de l'application -->
+<script src="<?= $wwwUrl ?>/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<div id="formuleSelect">
+        <article>
+            <h1>Formule au Choix</h1>
+            <?php foreach($formules as $formule):?>
+            <div id="menu">
+                <a href="<?= $requestUrl ?>/macommande">
+                    <div>
+                        <h2>Formule <?= $formule['name'] ?></h2>
+                    </div>
+                </a>
+            </div>
+            <?php endforeach ?>            
+        </article>
+</div>
