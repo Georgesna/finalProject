@@ -18,7 +18,7 @@
     <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 
     <!-- JavaScript de l'application -->
-    <script src="<?= $wwwUrl ?>/js/utilities.js"></script>
+    <script src="<?= $wwwUrl ?>/js/main.js"></script>
 </head>
 <body>
 
@@ -95,11 +95,11 @@
         <li><img src="<?= $wwwUrl ?>/images/payment/mastercard.png" alt="MasterCard"></li>
         <li><img src="<?= $wwwUrl ?>/images/payment/paypal.png" alt="PayPal"></li>
     </ul>
-    <p  style="text-align: center;">Copyright © 2019 Nahal Restaurant. All Rights Reserved.</p>
+    <p  style="text-align: center;">Copyright © <span id="year"> </span> Nahal Restaurant. All Rights Reserved.</p>
 </footer>
-
-<!-- Code principal JavaScript de l'application -->
-<script src="<?= $wwwUrl ?>/js/main.js"></script>
-
+<script language="javascript">
+generate();
+helloAlert();
+</script>
 </body>
 </html>

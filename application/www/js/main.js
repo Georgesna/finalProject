@@ -4,7 +4,13 @@
 // FONCTIONS                                                                           //
 /////////////////////////////////////////////////////////////////////////////////////////
 
+function generate(){
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+};
 
+function helloAlert(){
+    alert("Hello Sir, bon appetit. Hope you'll enjoy our meals. Thank You!!");
+};
 
 
 /////////////////////////////////////////////////////////////////////////////////////////
